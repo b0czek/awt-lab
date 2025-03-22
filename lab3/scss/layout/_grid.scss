@@ -1,0 +1,21 @@
+@use "../base/variables";
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 variables.$spacing-medium;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: variables.$spacing-large;
+    margin-top: variables.$spacing-large;
+}
+.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: variables.$spacing-large;
+    margin-top: variables.$spacing-large;
+}

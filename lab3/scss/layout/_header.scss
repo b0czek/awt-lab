@@ -1,0 +1,33 @@
+@use "../base/variables";
+@use "../utils/mixins";
+
+.header {
+    background-color: variables.$color-primary;
+    padding: variables.$spacing-medium 0;
+
+    .container {
+        @include mixins.flex-center;
+        justify-content: space-between;
+    }
+
+    &__logo img {
+        height: 50px;
+    }
+
+    &__nav ul {
+        @include mixins.flex-center;
+        gap: variables.$spacing-large;
+
+        a {
+            color: variables.$color-text-light;
+            font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__cta {
+        @include mixins.button($bg-color: variables.$color-accent, $text-color: variables.$color-text);
+    }
+}

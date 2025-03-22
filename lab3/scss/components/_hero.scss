@@ -1,0 +1,27 @@
+@use "../base/variables";
+@use "../utils/mixins";
+
+.hero {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: variables.$color-text-light;
+    padding: variables.$spacing-large * 2 0;
+    text-align: center;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: variables.$spacing-medium;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        margin-bottom: variables.$spacing-large;
+    }
+
+    &__cta {
+        @include mixins.button($bg-color: variables.$color-accent, $text-color: variables.$color-text);
+        font-size: variables.$font-size-large;
+        padding: variables.$spacing-medium variables.$spacing-large;
+    }
+}

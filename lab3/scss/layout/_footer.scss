@@ -1,0 +1,19 @@
+@use "../base/variables";
+
+.footer {
+    background-color: variables.$color-primary;
+    color: variables.$color-text-light;
+    padding: variables.$spacing-large 0;
+
+
+    &__social {
+        display: flex;
+        gap: variables.$spacing-medium;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+}

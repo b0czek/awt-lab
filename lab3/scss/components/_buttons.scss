@@ -1,0 +1,25 @@
+@use "../base/variables";
+@use "../utils/mixins";
+
+.button {
+    @include mixins.button;
+
+    &--secondary {
+        @include mixins.button($bg-color: variables.$color-secondary);
+    }
+
+    &--accent {
+        @include mixins.button($bg-color: variables.$color-accent, $text-color: variables.$color-text);
+    }
+
+    &--large {
+        padding: variables.$spacing-medium variables.$spacing-large;
+        font-size: variables.$font-size-large;
+    }
+}
+
+.hero__cta {
+    @include mixins.button($bg-color: variables.$color-accent, $text-color: variables.$color-text);
+    font-size: variables.$font-size-large;
+    margin-top: variables.$spacing-large;
+}

@@ -1,0 +1,46 @@
+@use "../base/variables";
+@use "../utils/mixins";
+
+.contact {
+    padding: variables.$spacing-large 0;
+    background-color: variables.$color-text-light;
+
+    &__title {
+        text-align: center;
+        margin-bottom: variables.$spacing-large;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: variables.$spacing-large;
+
+        @include mixins.respond-to(variables.$breakpoint-mobile) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: variables.$spacing-medium;
+
+        input, textarea {
+            padding: variables.$spacing-small;
+            border: 1px solid variables.$color-border;
+            border-radius: variables.$border-radius;
+            font-size: variables.$font-size-base;
+        }
+
+        button {
+            @include mixins.button($bg-color: variables.$color-primary, $text-color: variables.$color-text-light);
+            align-self: flex-start;
+        }
+    }
+
+    &__info {
+        p {
+            margin-bottom: variables.$spacing-small;
+        }
+    }
+}

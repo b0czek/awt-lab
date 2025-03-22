@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EkoDom - Budownictwo Ekologiczne. Zbuduj swój wymarzony dom w zgodzie z naturą.">
+    <title>EkoDom - Budownictwo Ekologiczne</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nagłówek -->
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <img src="assets/icons/logo.svg" alt="EkoDom Logo">
+            </div>
+            <nav class="header__nav">
+                <ul>
+                    <li><a href="#home">Strona Główna</a></li>
+                    <li><a href="#about">O Nas</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#tips">Porady</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="header__cta">Zamów konsultację</a>
+        </div>
+    </header>
+
+    <!-- Sekcja Hero -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="hero__title">Buduj z nami domy przyszłości</h1>
+            <p class="hero__subtitle">Ekologiczne, energooszczędne i przyjazne środowisku.</p>
+            <a href="#projects" class="hero__cta">Zobacz nasze projekty</a>
+        </div>
+    </section>
+
+    <!-- Sekcja O Nas -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="about__title">O Nas</h2>
+            <p class="about__description">
+                Jesteśmy firmą z wieloletnim doświadczeniem w budownictwie ekologicznym. Nasza misja to tworzenie domów,
+                które są nie tylko piękne, ale również przyjazne dla środowiska.
+            </p>
+            <div class="about__team">
+                <div class="team-member">
+                    <img src="assets/images/team1.jpg" alt="Jan Kowalski">
+                    <h3>Jan Kowalski</h3>
+                    <p>Architekt</p>
+                </div>
+                <div class="team-member">
+                    <img src="assets/images/team2.jpg" alt="Anna Nowak">
+                    <h3>Anna Nowak</h3>
+                    <p>Specjalista ds. Energii Odnawialnej</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Projekty -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="projects__title">Nasze Projekty</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <img src="assets/images/project1.jpg" alt="Dom Ekologiczny 1">
+                    <h3>Dom Pasywny</h3>
+                    <p>Energooszczędny dom z wykorzystaniem technologii pasywnych.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project2.jpg" alt="Dom Ekologiczny 2">
+                    <h3>Dom z Drewna</h3>
+                    <p>Naturalny dom z certyfikowanego drewna.</p>
+                </div>
+                <div class="project-card">
+                    <img src="assets/images/project3.jpg" alt="Dom Ekologiczny 3">
+                    <h3>Dom z Zielonym Dachiem</h3>
+                    <p>Dom z dachem pokrytym roślinnością.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Blog -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="blog__title">Nasz Blog</h2>
+            <div class="blog__grid">
+                <article class="blog-post">
+                    <img src="assets/images/blog1.jpg" alt="Ekologiczne materiały">
+                    <h3>Ekologiczne materiały budowlane</h3>
+                    <p>Dowiedz się, jakie materiały wybrać, aby Twój dom był przyjazny środowisku.</p>
+                    <a href="#" class="blog-post__read-more">Czytaj więcej</a>
+                </article>
+                <article class="blog-post">
+                    <img src="assets/images/blog2.jpg" alt="Technologie energooszczędne">
+                    <h3>Technologie energooszczędne w praktyce</h3>
+                    <p>Poznaj nowoczesne rozwiązania, które zmniejszą zużycie energii w Twoim domu.</p>
+                    <a href="#" class="blog-post__read-more">Czytaj więcej</a>
+                </article>
+                <article class="blog-post">
+                    <img src="assets/images/blog3.jpg" alt="Zielone dachy">
+                    <h3>Zielone dachy – korzyści i wyzwania</h3>
+                    <p>Sprawdź, dlaczego warto zainwestować w zielony dach.</p>
+                    <a href="#" class="blog-post__read-more">Czytaj więcej</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="contact__title">Kontakt</h2>
+            <div class="contact__content">
+                <form class="contact__form">
+                    <input type="text" placeholder="Imię i nazwisko" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Twoja wiadomość" required></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+                <div class="contact__info">
+                    <p><strong>Adres:</strong> ul. Ekologiczna 123, 00-001 Warszawa</p>
+                    <p><strong>Telefon:</strong> +48 123 456 789</p>
+                    <p><strong>Email:</strong> kontakt@ekodom.pl</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stopka -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__social">
+                <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <p class="footer__copyright">&copy; 2023 EkoDom. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+</html>

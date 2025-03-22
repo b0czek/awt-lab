@@ -1,0 +1,37 @@
+@use "../base/variables";
+
+.text-center {
+    text-align: center;
+}
+
+.mt-small {
+    margin-top: variables.$spacing-small;
+}
+
+.mt-medium {
+    margin-top: variables.$spacing-medium;
+}
+
+.mt-large {
+    margin-top: variables.$spacing-large;
+}
+
+.mb-small {
+    margin-bottom: variables.$spacing-small;
+}
+
+.mb-medium {
+    margin-bottom: variables.$spacing-medium;
+}
+
+.mb-large {
+    margin-bottom: variables.$spacing-large;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}

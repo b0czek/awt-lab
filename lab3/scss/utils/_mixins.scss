@@ -1,0 +1,30 @@
+@use "../base/variables";
+
+@use 'sass:color';
+
+@mixin flex-center($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin button($bg-color: variables.$color-primary, $text-color: variables.$color-text-light) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: variables.$spacing-small variables.$spacing-medium;
+    border: none;
+    border-radius: variables.$border-radius;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: color.adjust($bg-color, $lightness: -10%);
+    }
+}
+
+@mixin respond-to($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
