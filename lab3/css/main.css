@@ -116,6 +116,31 @@ p {
   display: block;
 }
 
+.blog .blog-post, .projects .project-card {
+  background-color: #F5F5F5;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.blog .blog-post:hover, .projects .project-card:hover {
+  transform: translateY(-10px);
+}
+.blog .blog-post img, .projects .project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.blog .blog-post h3, .projects .project-card h3 {
+  font-size: 1.5rem;
+  margin: 16px;
+}
+.blog .blog-post p, .projects .project-card p {
+  margin: 0 16px 16px;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -192,47 +217,6 @@ p {
   height: 24px;
 }
 
-.button {
-  background-color: #4CAF50;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.button:hover {
-  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
-}
-.button--secondary {
-  background-color: #388E3C;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.button--secondary:hover {
-  background-color: rgb(41.5757575758, 105.4242424242, 44.5454545455);
-}
-.button--accent {
-  background-color: #FFC107;
-  color: #333333;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.button--accent:hover {
-  background-color: rgb(211, 158.25, 0);
-}
-.button--large {
-  padding: 16px 32px;
-  font-size: 24px;
-}
-
 .hero__cta {
   background-color: #FFC107;
   color: #333333;
@@ -289,12 +273,12 @@ p {
 }
 .contact__content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   gap: 32px;
+  grid-template-columns: 1fr;
 }
 @media (min-width: 480px) {
   .contact__content {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .contact__form {
@@ -374,25 +358,6 @@ p {
 }
 .projects .project-card {
   background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.projects .project-card:hover {
-  transform: translateY(-10px);
-}
-.projects .project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.projects .project-card h3 {
-  font-size: 1.5rem;
-  margin: 16px;
-}
-.projects .project-card p {
-  margin: 0 16px 16px;
 }
 
 .blog {
@@ -403,31 +368,9 @@ p {
   text-align: center;
   margin-bottom: 32px;
 }
-.blog .blog-post {
-  background-color: #F5F5F5;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease;
-}
-.blog .blog-post:hover {
-  transform: translateY(-10px);
-}
-.blog .blog-post img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-.blog .blog-post h3 {
-  font-size: 1.5rem;
-  margin: 16px;
-}
-.blog .blog-post p {
-  margin: 0 16px 16px;
-}
 .blog .blog-post__read-more {
   display: inline-block;
-  margin: 0 16px 16px;
+  margin: auto 16px 16px;
   color: #4CAF50;
   font-weight: 600;
 }

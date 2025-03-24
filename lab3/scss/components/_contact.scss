@@ -12,11 +12,11 @@
 
     &__content {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         gap: variables.$spacing-large;
-
+        grid-template-columns: 1fr;
+        
         @include mixins.respond-to(variables.$breakpoint-mobile) {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
         }
     }
 

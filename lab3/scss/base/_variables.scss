@@ -10,6 +10,7 @@ $color-border: #DDDDDD;
 $font-primary: 'Roboto', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
 
+
 $font-size-base: 16px;
 $font-size-large: 24px;
 $font-size-small: 14px;
@@ -18,9 +19,11 @@ $breakpoint-mobile: 480px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1024px;
 
-$spacing-small: 8px;
-$spacing-medium: 16px;
-$spacing-large: 32px;
+$base-spacing: 8px;
+
+$spacing-small: $base-spacing;
+$spacing-medium: $base-spacing * 2;
+$spacing-large: $base-spacing * 4;
 
 $border-radius: 4px;
 $box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
