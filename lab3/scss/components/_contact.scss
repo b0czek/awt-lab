@@ -30,6 +30,7 @@
             border: 1px solid variables.$color-border;
             border-radius: variables.$border-radius;
             font-size: variables.$font-size-base;
+            resize: none;
         }
 
         button {
